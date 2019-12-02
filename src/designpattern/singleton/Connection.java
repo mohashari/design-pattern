@@ -22,8 +22,10 @@ public class Connection {
         this.host = host;
         this.username = username;
         this.password = password;
+        System.out.println("call connection");
     }
 
     public void sql(String sql) {
+        System.out.println(sql);
     }
 }
