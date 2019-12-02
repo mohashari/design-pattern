@@ -3,7 +3,8 @@ package designpattern.singleton;
 public class OrderDetailService {
 
     public void save(String orderId, String productName) {
-        Connection connection = new Connection("localhost", "root", "root");
-        connection.sql("INSERT INTO ORDER DETAIL ......");
+
+        // TODO: 02/12/19 solving for many connection
+        DbHelper.getConnection().sql("INSERT INTO ORDER DETAIL ......");
     }
 }
