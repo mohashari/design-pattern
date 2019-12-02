@@ -6,9 +6,8 @@ public class Customer {
     private String lastName;
     private String email;
 
-    // TODO: 02/12/19  open comment
-    //private address;
-    //private age
+    private String address;
+    private Integer age;
 
 
     public void setFirstName(String firstName) {
@@ -24,9 +23,11 @@ public class Customer {
     }
 
 
-    public Customer(String firstName, String lastName, String email) {
+    public Customer(String firstName, String lastName, String email,String address, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.address = address;
+        this.age = age;
     }
 }

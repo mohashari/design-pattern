@@ -2,13 +2,10 @@ package designpattern.builder;
 
 public class Main {
     public static void main(String[] args) {
-        Customer customer = new Customer("moh", "ashari ", "muklis@gmail.com");
-        Customer customer2 = new Customer("moh", "ashari ", "muklis@gmail.com");
+        Customer customer = new CustomerBuilder().setFirstName("moh").setLastName("ashari").setEmail("muklis@gmail.com").build();
+        Customer customer2 = new CustomerBuilder().setFirstName("moh").setLastName("ashari").build();
 
-        // TODO: 02/12/19 jika pojo di tambah maka akan menambah juga constractornya sehingga akan membuat inisialisasi object juga akan bertambah
-
-        // TODO: 02/12/19 open comment
-//        Customer customer3 = new Customer("moh","ashari ","muklis@gmail.com","cikarang");
-//        Customer customer4 = new Customer("moh","ashari ","muklis@gmail.com","cikarang",24);
+        Customer customer3 = new CustomerBuilder().setFirstName("moh").setLastName("ashari").setEmail("muklis@gmail.com").setAddress("cikarang").build();
+        Customer customer4 = new CustomerBuilder().setFirstName("moh").setLastName("ashari").setEmail("muklis@gmail.com").setAddress("cikarang").setAge(24).build();
     }
 }
