@@ -25,7 +25,7 @@ public class Connection {
         System.out.println("call connection");
     }
 
-    public void sql(String sql) {
+    public void query(String sql) {
         System.out.println(sql);
     }
 }

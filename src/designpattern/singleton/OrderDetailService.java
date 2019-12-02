@@ -5,6 +5,6 @@ public class OrderDetailService {
     public void save(String orderId, String productName) {
 
         // TODO: 02/12/19 solving for many connection
-        DbHelper.getConnection().sql("INSERT INTO ORDER DETAIL ......");
+        DbHelper.getConnection().query("INSERT INTO ORDER DETAIL ......");
     }
 }
