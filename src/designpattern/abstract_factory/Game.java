@@ -6,9 +6,9 @@ public class Game {
 
     private Arena arena;
 
-    public Game(Level level, Arena arena) {
-        this.level = level;
-        this.arena = arena;
+    public Game(GameFactory gameFactory) {
+        this.level = gameFactory.createLevel();
+        this.arena = gameFactory.createArena();
     }
 
     public Game() {
