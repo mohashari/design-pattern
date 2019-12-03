@@ -4,12 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // TODO: 03/12/19 problem di saat membuat object baru dengan title yang sama dan salary sama akan melakukan perulangan
-        Employee manager = new Employee("candra", "manager", 1200000L);
-        Employee manager1 = new Employee("hendra", "manager", 1200000L);
+        Employee manager = EmployeeFactory.createManager("candra");
+        Employee manager1 = EmployeeFactory.createManager("hendra");
 
-        Employee staff = new Employee("putra", "staff", 8000000L);
-        Employee staff1 = new Employee("bagus", "staff", 8000000L);
+        Employee staff = EmployeeFactory.createStaff("putra");
+        Employee staff1 = EmployeeFactory.createStaff("bagus");
 
         System.out.println("manager " + manager + " " + manager1);
         System.out.println("staff " + staff + " " + staff1);
