@@ -12,12 +12,11 @@ public class Main {
         binatangs.add(new Kambing());
         binatangs.add(new Lele());
 
-        // TODO: 11/12/19 problem jika ada penambahan di action di dalam interface binatang maka akan menambah banyak kondisi didalam mengakses binatang
         binatangs.forEach(binatang -> {
-            if(binatang.hidupDiDarat()){
-                System.out.println(binatang.getName()+" hidup di darat");
-            }else {
-                System.out.println(binatang.getName()+" hidup di air");
+            if (binatang instanceof BinatangDarat) {
+                System.out.println(binatang.getName() + " hidup di darat" + " dan jumlah kaki " + ((BinatangDarat) binatang).getJumlahKaki());
+            } else if (binatang instanceof BinatangAir) {
+                System.out.println(binatang.getName() + " hidup di air");
             }
         });
     }

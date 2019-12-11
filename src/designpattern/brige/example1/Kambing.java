@@ -1,19 +1,14 @@
 package designpattern.brige.example1;
 
-public class Kambing implements Binatang {
-
-    @Override
-    public boolean hidupDiDarat() {
-        return true;
-    }
-
-    @Override
-    public boolean hiidupDiAir() {
-        return false;
-    }
+public class Kambing extends BinatangDarat {
 
     @Override
     public String getName() {
         return "Kambing";
+    }
+
+    @Override
+    int getJumlahKaki() {
+        return 4;
     }
 }

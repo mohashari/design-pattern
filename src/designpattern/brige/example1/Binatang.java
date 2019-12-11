@@ -6,5 +6,5 @@ public interface Binatang {
     String getName();
     boolean hidupDiDarat();
 
-    boolean hiidupDiAir();
+    boolean hidupDiAir();
 }
